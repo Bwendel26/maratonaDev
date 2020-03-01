@@ -1,0 +1,197 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html body, body body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  font-family: "Sriracha", cursive;
+  background-color: #f9f9f9;
+}
+
+html body h1, html body h2, body body h1, body body h2 {
+  color: #000c;
+}
+
+html body header, html body .form, html body main, body body header, body body .form, body body main {
+  margin: 0 auto 50px auto;
+  width: 90%;
+  max-width: 500px;
+}
+
+html body header, html body main, html body footer, body body header, body body main, body body footer {
+  text-align: center;
+}
+
+html body header button, body body header button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  background-color: #ff4f4f;
+  color: #fff;
+  font-weight: bold;
+}
+
+html body header button:hover, body body header button:hover {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #ff4f4f;
+  background-color: #f9f9f9;
+  border: 1px #ff4f4f solid;
+  box-sizing: border-box;
+  padding: 7px 16px 7px 16px;
+}
+
+html body header .logo, body body header .logo {
+  width: 150px;
+  margin: 30px 0px;
+}
+
+html body header header p, body body header header p {
+  font-size: 14px;
+}
+
+html body header h1, html body main h2, body body header h1, body body main h2 {
+  margin-bottom: 50px;
+}
+
+html body .form h2, body body .form h2 {
+  text-align: right;
+  color: #fff;
+  font-size: 18px;
+}
+
+html body section.form, body body section.form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 45px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ff4f4f;
+  padding: 15px 60px;
+  border-radius: 6px;
+}
+
+html body form input, html body form button, html body form select, body body form input, body body form button, body body form select {
+  width: 100%;
+  margin-bottom: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px #fffa solid;
+}
+
+html body form input, html body form select, html body form button, body body form input, body body form select, body body form button {
+  background-color: transparent;
+}
+
+html body form input::-webkit-input-placeholder, body body form input::-webkit-input-placeholder {
+  color: #fffa;
+}
+
+html body form input:-ms-input-placeholder, body body form input:-ms-input-placeholder {
+  color: #fffa;
+}
+
+html body form input::-ms-input-placeholder, body body form input::-ms-input-placeholder {
+  color: #fffa;
+}
+
+html body form input::placeholder, body body form input::placeholder {
+  color: #fffa;
+}
+
+html body form select, html body form button, body body form select, body body form button {
+  color: #fffa;
+  font-weight: 800;
+}
+
+html body form select:hover, body body form select:hover {
+  color: #fff;
+  background-color: #ff4f4f;
+}
+
+html body form button:hover, body body form button:hover {
+  color: #ff4f4f;
+  background-color: #fff;
+  font-weight: bolder;
+}
+
+html body main h2 span, body body main h2 span {
+  color: #ff4f4f;
+}
+
+html body main .donors, body body main .donors {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+html body main .donors .blood, body body main .donors .blood {
+  color: #ff4f4f;
+  font-weight: bold;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+html body main .donors .blood::before, body body main .donors .blood::before {
+  content: "";
+  background-color: #ff4f4f11;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  /* Elemento gota */
+  border-radius: 50%;
+  border-top-right-radius: 0%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+html body main .donors .donor p, body body main .donors .donor p {
+  margin-top: 24px;
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+
+html body footer, body body footer {
+  margin-top: auto;
+  padding: 16px;
+  border-top: solid 1px #eee;
+}
+
+html body section.form.hide, body body section.form.hide {
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  margin-top: -70px;
+}
+/*# sourceMappingURL=style.css.map */

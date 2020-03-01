@@ -1,0 +1,191 @@
+//Global
+* { box-sizing: border-box; }
+
+html, body {
+   margin: 0; padding: 0;
+   
+   body {
+      display: flex;
+      flex-direction: column;
+
+      height: 100vh;
+
+      //fonte
+      font-family: "Sriracha", cursive;
+
+      background-color: #f9f9f9; //fundo da pagina 
+
+      h1, h2 { color: #000c; }
+
+      //Estrutura
+      header, .form, main {
+         // Espacamentos com margem
+         margin: 0 auto 50px auto;
+
+         // Limites dos elementos da pag
+         width: 90%;
+         max-width: 500px;
+      }
+
+      header, main, footer { //Alinhamento de textos
+         text-align: center; }
+
+      //Header
+      header { 
+         button {
+            margin-top: 10px;
+            padding: 8px 16px;
+            border-radius: 4px;
+            border: none;
+
+            background-color: #ff4f4f;
+            
+            color: #fff;
+            font-weight: bold;
+         }
+         button:hover{
+            box-sizing: border-box;
+
+            color: #ff4f4f;
+            background-color: #f9f9f9; //cor do fundo da pagina
+            border: 1px #ff4f4f solid;
+
+            box-sizing: border-box;
+
+            padding: 7px 16px 7px 16px; //corrigindo movimentacao do botao
+         }
+
+         .logo { width: 150px; margin: 30px 0px; }
+
+         header p { font-size: 14px; }
+      }
+
+      //Titulos
+      header h1, main h2 { margin-bottom: 50px; }
+
+      .form h2 {
+         text-align: right;
+         color: #fff;
+         font-size: 18px;
+      }
+
+      //Form
+      section.form{
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         gap: 45px;
+         align-items: center;
+
+         background-color: #ff4f4f;
+
+         padding: 15px 60px; 
+
+         border-radius: 6px;
+
+      } //section.form
+
+      //FORM
+      form {
+         input, button, select{
+            // largura
+            width: 100%;
+
+            // espacamentos
+            margin-bottom: 4px;
+
+            // Corrigindo Comportamento padrao de preenchimento
+            box-sizing: border-box;
+
+            // preenchimento
+            padding: 8px 16px;
+
+            // bordas
+            border-radius: 4px;
+            border: 1px #fffa solid;
+         }
+
+         input, select, button { background-color: transparent; }
+
+         input::placeholder { color: #fffa; }
+
+         // select:nth-child(1) { color: #fff; }
+
+         select, button { color: #fffa; font-weight: 800;}
+
+         select:hover { color: #fff; background-color: #ff4f4f;}
+
+         button:hover { color: #ff4f4f; background-color: #fff; font-weight: bolder;}
+      } 
+      //FORM
+      
+      //MAIN
+      main {
+         h2 span{ color: #ff4f4f; }
+
+         .donors {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+
+            .blood {
+               color: #ff4f4f;
+               font-weight: bold;
+               font-size: 12px;
+
+               display: flex;
+
+               align-items: center; //eixo x
+               justify-content: center; // eixo y
+               
+               position: relative;
+
+            }
+            
+            .blood::before { 
+               content: "";
+               background-color: #ff4f4f11;
+
+               width: 40px;
+               height: 40px;
+               
+               position: absolute;
+               
+               /* Elemento gota */
+               border-radius: 50%;
+               border-top-right-radius: 0%;
+
+               transform: rotate(-45deg);
+            }
+            .donor p {
+               margin-top: 24px;
+               margin-bottom: 40px;
+               font-size: 14px;
+            }
+         }
+      } //main
+      
+
+      footer {
+         margin-top: auto;
+
+         padding: 16px;
+
+         border-top: solid 1px #eee;
+      } //footer
+
+
+      //JavaScript
+
+      section.form.hide {
+          
+         transition: all 200ms; 
+         
+         // display: none;
+         //transicao
+         opacity: 0;
+         visibility: hidden;
+         height: 0;
+         margin-top: -70px;
+      }
+      //JavaScript
+   } //body
+} //html

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Doe vida, doe sangue!</title>
+   <link rel="stylesheet" href="style/style.css" type="text/css">
+   <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <header>
+      <img class="logo" src="/arqvs/logo.png" alt="Logo_DOE">
+      <h2>A sua doação importa!</h2>
+      <p>Até 3 vidas com 1 doação.</p>
+      <p>Mais de 38.000 doações são necessárias todos os dias...</p>
+      <p>Apenas 1,9% da população brasileira doa sangue.</p>
+
+      <button>Quero Ajudar</button>
+   </header>
+
+   <section class="form hide">
+      <h2>Entre na lista de doadores</h2>
+      <form action="/" method="POST">
+         <input type="text" name="name" placeholder="Nome Completo...">
+         <input type="email" name="email" placeholder="E-mail">
+         <select name="sangue" id="sangue">
+            <!-- Valores com "_" indicam que o fator Rh do sangue e negativo -->
+            <option value="">Selecione</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+         </select>
+
+         <button>Quero ajudar</button>
+      </form>
+   </section>
+
+   <main>
+      <h2>Últimos <span>doadores</span></h2>
+
+      <section class="donors">
+
+         {% for donor in donors %}
+            <div class="donor">
+               <div class="blood">{{donor.blood}}</div>
+               <p>{{donor.name}}</p>
+            </div>
+         {%endfor%}
+      </section>
+   </main>
+
+   <footer>@Com 💖 Bruno Fernandes.</footer>
+
+
+   <!-- JavaScript -->
+   <script src="/scripts.js"></script>
+</body>
+
+</html>
+
+
+ 
